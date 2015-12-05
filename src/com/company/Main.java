@@ -22,8 +22,8 @@ public class Main {
         /** oprocentowanie
          */
         double a = 2.5 / 100;
-        double b = 5 / 100;
-        double c = 10 / 100;
+        double b = 5.0 / 100;
+        double c = 10.0 / 100;
         /**
          * przelicznik oprocentowania + kwota na rate
          */
@@ -35,7 +35,7 @@ public class Main {
         double Kwota3 = Cena3 / rata;
 
 
-        if (6 <= rata && rata >= 12) {
+        if (6 <= rata && rata <= 12) {
             System.out.println("Przy " + rata + " ratach. Calkowita kwota do splaty bedzie wynosic " + Cena1 + " zl,");
             System.out.println("a kwota na rate bedzie wynosic " + Kwota1 + " zl.");
         } else if (13 <= rata && rata <= 24) {
